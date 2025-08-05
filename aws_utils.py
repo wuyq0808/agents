@@ -74,7 +74,6 @@ def setup_aws_credentials(region='eu-west-1'):
         aws_region = region
         
         print(f"✅ AWS credentials retrieved successfully")
-        print(f"🔑 Access Key: {aws_access_key[:8]}...")
         print(f"🌍 Region: {aws_region}")
         if creds.get('AWS_CREDENTIAL_EXPIRATION'):
             print(f"⏰ Expires: {creds['AWS_CREDENTIAL_EXPIRATION']}")
